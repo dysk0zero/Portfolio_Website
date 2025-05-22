@@ -15,7 +15,7 @@ function Skills_Section() {
       120px gap on each side of the screen. his is specially important for screen sizes smaller than 1440px but bigger than 1200px. 
       Then we position it at the back at z-[1]. */}
 
-      <div className="absolute max-w-[1200px] px-8 inset-0 z-[1] mx-auto">
+      <div className="absolute max-w-[1200px] px-8 inset-0 z-10 mx-auto">
         {/* Inside the container our grid is defined, with 5 vertical lines spaced by the same gap. */}
 
           {Array.from({ length: 5 }).map((_, i) => (
@@ -32,10 +32,10 @@ function Skills_Section() {
       
       {/* In this container we will place the first statement.
       Then we position it at the front at z-[10], and make it fill the container full size with ml-auto. */}
-      <div className="ml-auto lg:pr-[10px] z-[10]">
+      <div className="ml-auto lg:pr-[10px] z-50">
         {/* This is the first statement. It has a background blur, and background color. */}
         <h3 className="
-        h-[140px] w-[580px] bg-[rgba(255,255,255,0.12)] rounded-4xl
+        h-[140px] w-[580px] bg-[rgba(255,255,255,0.12)] rounded-3xl
         content-center text-right pr-[10px]
         text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground
         text-shadow-[4px_4px_4px_rgba(255,208,245,0.5)]
@@ -54,67 +54,93 @@ function Skills_Section() {
         className="
           flex flex-row
           pl-[25%]  ml-auto
-          z-[10]
           md:pt-[80px]"    
       >
         {/* Each card is a flex container with column direction. */}
         <div className="
           border-t border-b border-white/40
           content-center
-          text-2xl md:text-3xl lg:text-[32px]
-          flex-col"
+          text-2xl md:text-3xl lg:text-[32px]"
         >
           {/* This contains the small top left corner number of the card. */}
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
             <h6 className="content-center lg:text-sm text-white">01</h6>
           </div>
-          <div className="p-[10px] mb-[10px]">
-            <h1 className="
-              text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-              Data
-            </h1>
-            <h6 className="text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
-              A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
-            </h6>
-          </div>
-          
-          </div>
+          {/* This contains the front individual card. */}
+          <div className="relative m-[10px] mr-[20px] mb-[20px]">
+            {/* Shadow layer 2 (bottom layer) */}
+            <div className="absolute top-[10px] left-[10px] w-full h-[190px] bg-[rgba(109,246,255,0.2)] rounded-2xl z-30" />
 
+            {/* Shadow layer 1 (middle layer) */}
+            <div className="absolute top-[5px] left-[5px] w-full h-[190px] bg-[rgba(109,246,255,0.0)] rounded-2xl z-40" />
+
+            {/* Main card (top layer) */}
+            <div className="relative w-full h-[190px] bg-[rgba(208,255,244,0.5)] backdrop-blur-[8px] rounded-2xl z-50 p-[10px] pr-0">
+              <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+                Data
+              </h1>
+              <h6 className="pt-[10px] pr-[10px] text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
+                A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
+              </h6>
+            </div>
+          </div>
+        </div>
+        
         <div className="
           border-t border-b border-white/40
           content-center
-          text-2xl md:text-3xl lg:text-[32px] font-normal text-foreground
-          flex-col"
+          text-2xl md:text-3xl lg:text-[32px]"
         >
+          {/* This contains the small top left corner number of the card. */}
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
             <h6 className="content-center lg:text-sm text-white">02</h6>
           </div>
-          <div className="p-[10px] mb-[10px]">
-            <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-            Code
-          </h1>
-          <h6 className="text-sm lg:text-[18px] text-foreground leading-[1.15]">
-            Helping build web applications using Nextjs and headless solutions. I also work regularly with scientific tools in Python and C++.
-          </h6>
+          {/* This contains the front individual card. */}
+          <div className="relative m-[10px] mr-[20px] mb-[20px]">
+            {/* Shadow layer 2 (bottom layer) */}
+            <div className="absolute top-[10px] left-[10px] w-full h-[190px] bg-[rgba(109,246,255,0.2)] rounded-2xl z-30" />
+
+            {/* Shadow layer 1 (middle layer) */}
+            <div className="absolute top-[5px] left-[5px] w-full h-[190px] bg-[rgba(109,246,255,0.0)] rounded-2xl z-40" />
+
+            {/* Main card (top layer) */}
+            <div className="relative w-full h-[190px] bg-[rgba(208,255,244,0.5)] backdrop-blur-[8px] rounded-2xl z-50 p-[10px] pr-0">
+              <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+                Code
+              </h1>
+              <h6 className="pt-[10px] pr-[10px] text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
+                Helping build web applications using Nextjs and headless solutions. I also work regularly with scientific tools in Python and C++.
+              </h6>
+            </div>
           </div>
         </div>
 
         <div className="
           border-t border-b border-white/40
           content-center
-          text-2xl md:text-3xl lg:text-[32px] font-normal text-foreground
-          flex-col"
+          text-2xl md:text-3xl lg:text-[32px]"
         >
+          {/* This contains the small top left corner number of the card. */}
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
-            <h6 className="content-center lg:text-sm text-white">03</h6>
+            <h6 className="content-center lg:text-sm text-white">02</h6>
           </div>
-          <div className="p-[10px] mb-[10px]">
-            <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-              Design
-            </h1>
-            <h6 className="text-sm lg:text-[18px] text-foreground leading-[1.15]">
-              A passion for simplicity. Inspired by natural and minimal lines, I use modern tools like Figma to work collaboratively within a team.
-            </h6>
+          {/* This contains the front individual card. */}
+          <div className="relative m-[10px] mr-[20px] mb-[20px]">
+            {/* Shadow layer 2 (bottom layer) */}
+            <div className="absolute top-[10px] left-[10px] w-full h-[190px] bg-[rgba(109,246,255,0.2)] rounded-2xl z-30" />
+
+            {/* Shadow layer 1 (middle layer) */}
+            <div className="absolute top-[5px] left-[5px] w-full h-[190px] bg-[rgba(109,246,255,0.0)] rounded-2xl z-40" />
+
+            {/* Main card (top layer) */}
+            <div className="relative w-full h-[190px] bg-[rgba(208,255,244,0.5)] backdrop-blur-[8px] rounded-2xl z-50 p-[10px] pr-0">
+              <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+                Design
+              </h1>
+              <h6 className="pt-[10px] pr-[10px] text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
+                A passion for simplicity. Inspired by natural and minimal lines, I use modern tools like Figma to work collaboratively within a team.
+              </h6>
+            </div>
           </div>
         </div>
       </div>
