@@ -68,7 +68,7 @@ function Skills_Section() {
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
             <h6 className="content-center lg:text-sm text-white">01</h6>
           </div>
-          <div className="p-[10px] mb-[10px] bg-white">
+          <div className="p-[10px] mb-[10px]">
             <h1 className="
               text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
               Data
@@ -89,7 +89,7 @@ function Skills_Section() {
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
             <h6 className="content-center lg:text-sm text-white">02</h6>
           </div>
-          <div className="p-[10px] mb-[10px] bg-white">
+          <div className="p-[10px] mb-[10px]">
             <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
             Code
           </h1>
@@ -108,7 +108,7 @@ function Skills_Section() {
           <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
             <h6 className="content-center lg:text-sm text-white">03</h6>
           </div>
-          <div className="p-[10px] mb-[10px] bg-white">
+          <div className="p-[10px] mb-[10px]">
             <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
               Design
             </h1>
