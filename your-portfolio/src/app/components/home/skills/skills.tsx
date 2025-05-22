@@ -57,47 +57,65 @@ function Skills_Section() {
           z-[10]
           md:pt-[80px]"    
       >
+        {/* Each card is a flex container with column direction. */}
         <div className="
-          border-t border-b border-white opacity-40
+          border-t border-b border-white/40
           content-center
-          text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground
-          backdrop-blur-sm
+          text-2xl md:text-3xl lg:text-[32px]
           flex-col"
         >
-          <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-            Data
+          {/* This contains the small top left corner number of the card. */}
+          <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
+            <h6 className="content-center lg:text-sm text-white">01</h6>
+          </div>
+          <div className="p-[10px] mb-[10px] bg-white">
+            <h1 className="
+              text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+              Data
+            </h1>
+            <h6 className="text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
+              A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
+            </h6>
+          </div>
+          
+          </div>
+
+        <div className="
+          border-t border-b border-white/40
+          content-center
+          text-2xl md:text-3xl lg:text-[32px] font-normal text-foreground
+          flex-col"
+        >
+          <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
+            <h6 className="content-center lg:text-sm text-white">02</h6>
+          </div>
+          <div className="p-[10px] mb-[10px] bg-white">
+            <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+            Code
           </h1>
-          <h6 className="text-sm lg:text-[16px] font-regular text-foreground">
-            A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
+          <h6 className="text-sm lg:text-[18px] text-foreground leading-[1.15]">
+            Helping build web applications using Nextjs and headless solutions. I also work regularly with scientific tools in Python and C++.
           </h6>
+          </div>
         </div>
+
         <div className="
-          border-t border-b border-white opacity-40
+          border-t border-b border-white/40
           content-center
-          text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground
-          backdrop-blur-sm
+          text-2xl md:text-3xl lg:text-[32px] font-normal text-foreground
           flex-col"
         >
-          <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-            Data
-          </h1>
-          <h6 className="text-sm lg:text-[16px] font-regular text-foreground">
-            A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
-          </h6>
-        </div>
-        <div className="
-          border-t border-b border-white opacity-40
-          content-center
-          text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground
-          backdrop-blur-sm
-          flex-col"
-        >
-          <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
-            Data
-          </h1>
-          <h6 className="text-sm lg:text-[16px] font-regular text-foreground">
-            A strong focus on measurable analytics, KPIs, and data analysis. I use real mathematical methods to bring qualitative insights.
-          </h6>
+          <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
+            <h6 className="content-center lg:text-sm text-white">03</h6>
+          </div>
+          <div className="p-[10px] mb-[10px] bg-white">
+            <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+              Design
+            </h1>
+            <h6 className="text-sm lg:text-[18px] text-foreground leading-[1.15]">
+              A passion for simplicity. Inspired by natural and minimal lines, I use modern tools like Figma to work collaboratively within a team.
+            </h6>
+          </div>
         </div>
       </div>
     </section>
