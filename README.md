@@ -10,17 +10,17 @@ The site uses app routing and the latest version of Next.js, as well as Tailwind
 debugging and reuse of modules.
 
 -  */.* root: This is where we find most configuration files, i.e. .json files, tailwind.config.js --to configure Tailwind--, and the gitfiles.
--  /lib/ : Here can be found the sanity.js file.
+-  /lib/ : This is where the sanity.js file can be found.
 -  /public/: It includes all public assets like images, svg files, etc.
--  /src/app/: Here is the main directory of our app. It contains the main layout.tsx and page.tsx files, as well as the file globals.css (largely replaced by Tailwind).
--  /src/app/components/: Here is where all website components can be found, including the header, landing page sections, hero section, and other modules.
--  /src/app/pages/: Here is where the other pages are saved, including about us page and projects page.
+-  /src/app/: This is the main directory of our app. It contains the main layout.tsx and page.tsx files, as well as the file globals.css (largely replaced by Tailwind).
+-  /src/app/components/: This is where all website components can be found, including the header, landing page sections, hero section, and other modules.
+-  /src/app/pages/: This is where the other pages are located, including about us page and projects page.
 
 --root
     |
     |--lib
     |--public
-    |--scr/app
+    |--src/app
           |
           |--components
           |--pages
