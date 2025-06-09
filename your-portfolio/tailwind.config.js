@@ -5,7 +5,6 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default {
   darkMode: 'media',
   content: [
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}', // ✅ Needed for App Router
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
