@@ -13,7 +13,11 @@ function Statement02() {
                 ))}
             </div>
             <div className="pt-[100px] pb-[100px] h-[350px] max-w-[800px] mx-auto text-black">
-                <h3 className="text-center text-[48px] font-bold">People-First culture around technical solutions.</h3>
+                <h3 
+                    className="text-center text-[48px] font-bold text-shadow-[-4px_-4px_4px_rgba(145,145,145,0.6)]"
+                >
+                    People-First culture around technical solutions.
+                </h3>
             </div>
         </section>
     );
