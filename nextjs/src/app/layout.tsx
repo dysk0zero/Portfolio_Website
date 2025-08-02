@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -19,10 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable}`}>
-      <body
-        className="bg-background text-foreground font-sans antialiased"
-      >
+    <html lang="en" className={montserrat.variable}>
+      <body className="font-sans antialiased bg-background text-foreground">
         {children}
       </body>
     </html>

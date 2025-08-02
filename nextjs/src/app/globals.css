@@ -3,13 +3,12 @@
 :root {
   --background: #f5f5f5;
   --foreground: #24292F;
-  --font-sans: 'Montserrat', system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #24292F;
-    --foreground: #ededed;
+    --foreground: #f5f5f5;
   }
 }
 
