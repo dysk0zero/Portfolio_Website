@@ -1,6 +1,6 @@
 function Statement02() {
     return (
-        <section className="relative bg-background">
+        <section className="relative border-b border-black/40" >
             <div className="absolute max-w-[1200px] px-8 inset-0 z-10 mx-auto pointer-events-none">
                 {Array.from({ length: 5 }).map((_, i) => (
                 <div
@@ -12,8 +12,8 @@ function Statement02() {
                 />
                 ))}
             </div>
-            <div className="mt-[150px] h-[150px] max-w-[900px] mx-auto">
-                <h3>People-First culture around technical solutions.</h3>
+            <div className="pt-[100px] pb-[100px] h-[350px] max-w-[800px] mx-auto text-black">
+                <h3 className="text-center text-[48px] font-bold">People-First culture around technical solutions.</h3>
             </div>
         </section>
     );

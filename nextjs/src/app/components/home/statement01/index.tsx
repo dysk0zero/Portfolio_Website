@@ -12,9 +12,11 @@ function Statement01() {
                 />
                 ))}
             </div>
-            <div className="ml-[60px] mt-[150px] w-[850px] h-[200px] text-2xl md:text-3xl lg:text-[32px] font-bold text-foreground text-shadow-[-4px_4px_4px_rgba(208,255,244,0.25)] backdrop-blur-[4px] leading-[1.25]">
-                As technology improves, our need to digitalize traditional business and improve existing systems increases. 
-                <span className="block mt-4"/>Let&apos;s build that together.
+            <div className="relative ml-[60px] pt-[150px] w-[850px] h-[350px]">
+                <h4 className="text-2xl md:text-3xl lg:text-[32px] font-bold text-foreground text-shadow-[-4px_4px_4px_rgba(208,255,244,0.25)] backdrop-blur-[4px] leading-[1.25]">
+                    As technology improves, our need to digitalize traditional business and improve existing systems increases. 
+                    <span className="block mt-4"/>Let&apos;s build that together.
+                </h4>
             </div>
         </section>
     );
