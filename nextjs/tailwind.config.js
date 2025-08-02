@@ -18,6 +18,7 @@ const config = {
         accent: '#ffcc00',
         accent2: '#3e4247',
         accent3: '#a5a5a5',
+        accent4: '#095262',
       },
       fontFamily: {
         sans: ['var(--font-montserrat)', 'system-ui', 'sans-serif'],
