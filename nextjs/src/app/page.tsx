@@ -1,8 +1,9 @@
-import Hero from "./components/hero";
+import Hero from "./components/home/hero";
 import Skills_Section from "./components/home/skills";
 import Statement01 from "./components/home/statement01";
 import Statement02 from "./components/home/statement02";
 import SoftSkills from "./components/home/soft-skills";
+import Statement03 from "./components/home/statement03";
 
 export default function Home() {
   return (
@@ -42,6 +43,12 @@ export default function Home() {
             <SoftSkills />
           </div>
         </section>
+
+        <section className="relative w-full bg-background">
+          <div className="max-w-[1440px] mx-auto lg:pl-[120px] lg:pr-[120px]">
+            <Statement03/>
+          </div>
+        </section> 
 
       </main>
     </div>

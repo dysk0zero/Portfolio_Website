@@ -44,7 +44,7 @@ function SoftSkills(){
                 <Card 
                     title="communication"
                     content="I act as a translator between clients, teams, and stakeholders, simplifying technical jargon and ensuring smooth operations across every stage of a project."
-                    shadowColor="rgba(219,255,0,0.6)"
+                    shadowColor="rgba(219,255,0,0.4)"
                 />
                 <div className="relative lg:h-[400px] border-b border-black/40">
                     <div 
@@ -63,13 +63,13 @@ function SoftSkills(){
                 <Card
                     title="leadership"
                     content="I approach teams with a flexible and people-first system balancing both individual needs and institutional requirements."
-                    shadowColor="rgba(54,208,218,0.6)"                
+                    shadowColor="rgba(54,208,218,0.4)"                
                 />
 
                 <Card
                     title="problem solving"
                     content="Leveraging my formal background in physics I can simplify and solve complex problems, and also understand its underlying real-world interpretation."
-                    shadowColor="rgba(228,147,205,0.6)"
+                    shadowColor="rgba(228,147,205,0.4)"
                 />
 
                 <div className="relative lg:h-[400px] border-b border-black/40 ">
@@ -93,7 +93,7 @@ function SoftSkills(){
                 <Card
                     title="delivery"
                     content="Focused on my craft, I always aim for perfection and success, both in time and performance. I prioritize client needs to guarantee a smooth delivery and surpass expectations."
-                    shadowColor="rgba(106,237,94,0.6)"
+                    shadowColor="rgba(106,237,94,0.4)"
                 />
             </div>
         </main>
