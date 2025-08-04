@@ -48,9 +48,9 @@ export default function Home() {
           <div className="max-w-[1440px] mx-auto lg:pl-[120px] lg:pr-[120px]">
             <Statement03/>
           </div>
-        </section> 
-
+        </section>
       </main>
     </div>
+    
   );
 }
