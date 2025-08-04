@@ -14,7 +14,7 @@
 }
 @layer utilities {
   .text-shadow-hero {
-    text-shadow: -4px 4px 4px rgba(0,125,100,0.8);
+    text-shadow: -4px 4px 4px rgba(96, 133, 125, 0.8);
   }
   .text-shadow-hero-sub {
     text-shadow: 6px 6px 6px rgba(0,125,100,0.8);
@@ -23,7 +23,7 @@
     text-shadow: 4px 4px 4px rgba(125,0,100,0.8);
   }
   .text-shadow-statement01 {
-    text-shadow: -6px 6px 6px rgba(125,0,100,0.8);
+    text-shadow: 6px 6px 6px rgba(130,150,0,0.8);
   }
 }
 @theme{
