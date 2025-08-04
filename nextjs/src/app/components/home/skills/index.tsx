@@ -33,7 +33,9 @@ function Skills_Section() {
       {/* Cards in grid */}
       <div className="grid grid-cols-4 gap-0 w-full max-w-[1200px] mx-auto md:pt-[80px] z-50">
         {/* Empty first column */}
-        <div></div>
+        <div>
+          <h4 className="sr-only">Technical coding, analytical and designing skills.</h4>
+        </div>
 
         {/* Three cards aligned with columns */}
         <SkillCard

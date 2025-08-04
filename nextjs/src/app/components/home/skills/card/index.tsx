@@ -20,6 +20,7 @@ export default function SkillCard({
       {/* Number */}
       <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
         <h5 className="content-center text-white lg:text-sm">{id}</h5>
+        <h6 className="sr-only">My skills in {title} are: </h6>
       </div>
 
       {/* Card */}
