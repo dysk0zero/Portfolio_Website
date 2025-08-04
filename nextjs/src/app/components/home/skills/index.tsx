@@ -8,7 +8,7 @@ function Skills_Section() {
         {Array.from({ length: 5 }).map((_, i) => (
           <div
             key={i}
-            className="absolute top-0 bottom-0 w-px bg-white opacity-40"
+            className="absolute top-0 bottom-0 w-px bg-white opacity-30"
             style={{
               left: `${(i / 4) * 100}%`,
             }}
@@ -19,9 +19,12 @@ function Skills_Section() {
       {/* Statement */}
       <div className="ml-auto lg:pr-[10px] z-50">
         <h3 
-          className="h-[140px] w-[580px] bg-[rgba(255,255,255,0.12)] rounded-3xl content-center text-right pr-[30px] 
-          text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground text-shadow-[4px_4px_4px_rgba(255,208,245,0.5)] 
-          backdrop-blur-[4px]">
+          className="h-[140px] w-[580px] bg-[rgba(255,255,255,0.12)] rounded-3xl 
+          content-center text-right pr-[15px]
+          text-2xl md:text-3xl lg:text-[32px] font-semibold text-foreground 
+          text-shadow-skills
+          backdrop-blur-[4px]"
+        >
           I deliver custom solutions to solve <br /> critical business
           challenges.
         </h3>

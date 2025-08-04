@@ -12,6 +12,20 @@
     color: var(--foreground);
   }
 }
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: -4px 4px 4px rgba(0,125,100,0.8);
+  }
+  .text-shadow-hero-sub {
+    text-shadow: 6px 6px 6px rgba(0,125,100,0.8);
+  }
+  .text-shadow-skills {
+    text-shadow: 4px 4px 4px rgba(125,0,100,0.8);
+  }
+  .text-shadow-statement01 {
+    text-shadow: -6px 6px 6px rgba(125,0,100,0.8);
+  }
+}
 @theme{
   --font-sans: 'Montserrat', system-ui, sans-serif;
   --color-background: var(--background);
@@ -24,6 +38,7 @@
   --color-accent2: #3e4247;
   --color-accent3: #a5a5a5;
   --color-accent4: #095262;
+  --color-shadow1: #008664;
 }
 @font-face {
   font-family: 'Montserrat';

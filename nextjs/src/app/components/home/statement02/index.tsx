@@ -5,16 +5,17 @@ function Statement02() {
                 {Array.from({ length: 5 }).map((_, i) => (
                 <div
                     key={i}
-                    className="absolute top-0 bottom-0 w-px bg-black opacity-40"
+                    className="absolute top-0 bottom-0 w-px bg-black opacity-30"
                     style={{
                     left: `${(i / 4) * 100}%`,
                     }}
                 />
                 ))}
             </div>
-            <div className="pt-[100px] pb-[100px] h-[350px] max-w-[800px] mx-auto text-black">
+            <div className="pt-[100px] pb-[100px] h-[350px] max-w-[800px] mx-auto z-20 text-black">
                 <h3 
-                    className="text-center text-[48px] font-bold text-shadow-[-4px_-4px_4px_rgba(145,145,145,0.6)]"
+                    className="text-center text-[48px] font-bold 
+                    text-shadow-[-6px_-6px_6px_rgba(145,145,145,0.8)]"
                 >
                     People-First culture around technical solutions.
                 </h3>

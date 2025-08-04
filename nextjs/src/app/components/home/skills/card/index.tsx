@@ -16,7 +16,7 @@ export default function SkillCard({
   gradientColors = ["#00ff00", "#0000ff"],
 }: SkillCardProps) {
   return (
-    <div className="content-center border-t border-b border-white/40">
+    <div className="content-center border-t border-b border-white/30">
       {/* Number */}
       <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
         <h6 className="content-center text-white lg:text-sm">{id}</h6>
