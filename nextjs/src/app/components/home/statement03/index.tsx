@@ -12,13 +12,13 @@ function Statement03 () {
                 />
                 ))}
             </div>
-            <h5 
+            <h3 
                 className="w-[920px] h-[150px] ml-[60px] lg:text-[48px] 
                 z-20 font-bold 
                 text-shadow-[-6px_-6px_6px_rgba(145,145,145,0.8)]"
             >
                 From small freelance work to joining teams in enterprise projects.
-            </h5>
+            </h3>
         </main>
     );
 }

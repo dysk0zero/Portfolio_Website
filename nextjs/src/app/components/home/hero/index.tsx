@@ -35,7 +35,7 @@ function Hero() {
         className="lg:pt-[140px] lg:pl-[0px] md:pl-8 sm:pl-6 z-20"
       >
         <h1 className="sr-only">Javier Bellido Roldán - Portfolio Homepage</h1>
-        <h4 className="
+        <h2 className="
           h-[280px] w-[680px] 
           bg-[linear-gradient(120deg,_var(--background)_30%,_var(--mid-color)_60%,_var(--to-color)_90%)] 
           rounded-4xl content-center  pl-8 
@@ -45,7 +45,7 @@ function Hero() {
           style={headingStyles}
         >
           Decoding challenges, <br /> Designing futures
-        </h4>
+        </h2>
         <h2 className="
           h-[200px] w-[680px] 
           content-center text-right

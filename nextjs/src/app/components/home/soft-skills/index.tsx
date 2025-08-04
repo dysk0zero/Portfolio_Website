@@ -1,10 +1,10 @@
 function SoftSkills(){
     const Card = ({ title, content, shadowColor }: { title: string; content: string; shadowColor: string; }) => (
         <div className="flex flex-col text-black py-[20px] pl-[40px] pr-[30px] lg:h-[400px] border-l border-b border-black/30 z-20" style={{ backgroundColor: "#f5f5f5" }} >
-            <h3 
+            <h2 
                 className="lg:text-[48px] font-semibold backdrop-blur-[4px]"
                 style={{ textShadow: `4px 4px 4px ${shadowColor}` }}
-            >{title}</h3>
+            >{title}</h2>
             <p 
                 className="lg:text-[32px] leading-[39px] backdrop-blur-[4px]"
                 style={{ textShadow: `4px 4px 4px ${shadowColor}` }}

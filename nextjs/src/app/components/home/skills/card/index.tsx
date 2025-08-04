@@ -19,7 +19,7 @@ export default function SkillCard({
     <div className="content-center border-t border-b border-white/30">
       {/* Number */}
       <div className="flex lg:w-[50px] lg:h-[50px] justify-center">
-        <h6 className="content-center text-white lg:text-sm">{id}</h6>
+        <h5 className="content-center text-white lg:text-sm">{id}</h5>
       </div>
 
       {/* Card */}
@@ -46,12 +46,12 @@ export default function SkillCard({
           className="relative w-full h-[190px] backdrop-blur-[8px] rounded-2xl z-50 p-[10px] pr-0"
           style={{ background: bgColor }}
         >
-          <h1 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
+          <h2 className="text-xl md:text-2xl lg:text-[28px] font-semibold text-foreground">
             {title}
-          </h1>
-          <h6 className="pt-[10px] pr-[10px] text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
+          </h2>
+          <p className="pt-[10px] pr-[10px] text-sm lg:text-[18px] font-normal text-foreground leading-[1.15]">
             {description}
-          </h6>
+          </p>
         </div>
       </div>
     </div>
