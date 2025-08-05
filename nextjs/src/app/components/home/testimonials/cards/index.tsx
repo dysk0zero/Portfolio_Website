@@ -6,9 +6,22 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ name, role, quote }: TestimonialCardProps) {
   return (
-    <div className="flex flex-col items-center max-w-sm p-6 text-center bg-white rounded-lg shadow-lg">
-      <h3 className="text-xl font-semibold">{quote}</h3>
-      <p className="mt-4 text-sm italic text-gray-700">{name}, {role}</p>
+    <div 
+      className="h-full flex flex-col justify-between p-5"
+    >
+      <div className="relative flex flex-col justify-start items-start gap-2 font-medium">
+        <p className="text-3xl">{quote}</p>
+        <p className="text-md">{name}, {role}</p>
+      </div>
+      <div className="relative flex justify-between items-center">
+        <div className="flex items-center border border-white">
+          <p className="p-4 text-xl font-semibold">Logo</p>
+        </div>
+        <div className="relative flex justify-center items-center pr-5">
+          <p className="font-medium">Case Study</p>
+        </div>
+      </div>
+
     </div>
   )
 }

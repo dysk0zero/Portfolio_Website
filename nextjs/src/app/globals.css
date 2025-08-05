@@ -49,6 +49,13 @@
 }
 @font-face {
   font-family: 'Montserrat';
+  src: url('/fonts/montserrat/montserrat-v30-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
   src: url('/fonts/montserrat/montserrat-v30-latin-600.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
