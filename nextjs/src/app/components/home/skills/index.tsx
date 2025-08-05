@@ -34,7 +34,18 @@ function Skills_Section() {
       <div className="grid grid-cols-4 gap-0 w-full max-w-[1200px] mx-auto md:pt-[80px] z-50">
         {/* Empty first column */}
         <div>
-          <h4 className="sr-only">Technical coding, analytical and designing skills.</h4>
+          <h4 className="sr-only">
+            Technical coding, analytical and designing skills.
+          </h4>
+          <h5 className="sr-only">
+            This is a website to display my technical capabilities and show off my coding skills.
+          </h5>
+          <h6 className="sr-only">
+            A page for projects and an about me page are available under this site.
+          </h6>
+          <p className="sr-only">
+            A page about my art, photography and philosophilcal essays is also available under
+          </p>
         </div>
 
         {/* Three cards aligned with columns */}
