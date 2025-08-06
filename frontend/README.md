@@ -1,53 +1,69 @@
-# My Portfolio Website
-## Structure
-### General Routing and Structure
-The repository structure follows the typical modern Next.js approach, which is extremely modular and allows for easier debugging and reuse of modules. 
+Front End
+---------------------------------------------------------------------
+Folder Structure
+---------------------------------------------------------------------
 
--  './' root: This is where we find most configuration files, i.e. .json files, tailwind.config.js --to configure Tailwind--, and the gitfiles.
--  './lib/' : This is where the sanity files and hooks are located.
--  './public/': It includes all public assets like images, svg files, etc.
--  './src/app/': This is the main directory of our app. It contains the main layout.tsx and page.tsx files, as well as the file globals.css (largely replaced by Tailwind).
--  './src/app/components/': This is where all website components can be found, including the header, landing page sections, hero section, and other modules.
--  './src/app/(pages)/': This is where the other pages are located, including about us page and projects page.
+./ (Project Root)
+- Contains core configuration and environment files:
+  - package.json
+  - tailwind.config.js
+  - .gitignore
+  - .env.local (for environment variables)
 
-### './src/lib/'
-- './src/lib/sanity/client.ts': Connects to the sanity client using the environment variables 'projectId' and 'dataset' through the API.
-- './src/lib/sanity/getTestimonials.ts': Fetches the Sanity schema "testimonial".
+./public/
+- Contains public assets served directly:
+  - ./public/fonts/         -> Custom fonts used in the app
+  - ./public/images/        -> Images
+  - ./public/icons/         -> SVGs, icons, etc.
 
-### './public/'
-- './public/fonts': Stores the fonts used in this project.
+./src/lib/
+- Utility files and API clients:
+  - ./src/lib/sanity/client.ts             -> Preconfigured Sanity client using environment variables
+  - ./src/lib/sanity/getTestimonials.ts    -> Fetches the "testimonial" schema from Sanity
 
-### './src/app/'
-- './src/app/page.tsx': Landing page.
-- './src/app/layout.tsx': Website layout page. Includes metadata, preloads local fonts, defines using Montserrat for <body> and the text color.
-- './src/app/globals.css': File containing all CSS and TailwindCSS configuration.
-- './src/app/components/home/': Folder containing all components for the landing page.
-- './src/app/components/ui/': Folder containing all reusable UI global components.
+./src/app/
+- Main application directory:
+  - page.tsx           -> Homepage
+  - layout.tsx         -> Root layout, metadata, font and color setup
+  - globals.css        -> Global styles and Tailwind base layer
 
----
+./src/app/components/
+- Component organization:
+  - ./components/home/     -> Components specific to the landing page
+  - ./components/ui/       -> Reusable UI components (buttons, carousel, etc.)
 
-## Getting Started
-### Setting Up
-First run 
+./src/app/(pages)/
+- Route segments:
+  - Includes secondary pages like the About or Projects page
 
-```npm install```
+---------------------------------------------------------------------
+Getting Started
+---------------------------------------------------------------------
 
-To run the development server:
+1. Installation
 
-```npm run dev```
+Install dependencies:
+    npm install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start the development server:
+    npm run dev
 
-### Connect to Sanity
-Run 
+Visit in your browser:
+    http://localhost:3000
 
-```npm install --legacy-peer-deps next-sanity @sanity/image-url```
+---------------------------------------------------------------------
+Sanity CMS Integration
+---------------------------------------------------------------------
 
-Then create a '.env.local' file in the './' directory with the following code:
+1. Install Required Packages:
+    npm install --legacy-peer-deps next-sanity @sanity/image-url
 
-```
-NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_ID
-NEXT_PUBLIC_SANITY_DATASET=production
-```
+2. Set Up Environment Variables:
 
-You can find your ID in '/sanity/sanity.config.ts'.
+Create a file `.env.local` in the root directory with the following content:
+
+    NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_ID
+    NEXT_PUBLIC_SANITY_DATASET=production
+
+You can find your project ID in:
+    ./sanity/sanity.config.ts
