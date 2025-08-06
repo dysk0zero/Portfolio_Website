@@ -1,27 +1,73 @@
 #  Portfolio Website v0.3.3
-## A NextJS + TailwindCSS app with Sanity deployed in Vercel.
+## A personal portfolio built with Next.js, TailwindCSS, and Sanity.
+
+---
 
 ### Abstract
-The porpuse of this project is to showcase my skills in web design and front-end development. The design of the website was done in Figma, and then it was reproduced from scracth using the framework Next.js and TailwindCSS. The backend is built on top of Sanity, which allows for fast deployment and a quick connection to the front end. The deployment is done quickly in Vercel and Sanity, therefore a Dockerfile is not needed.
+The porpuse of this project is to showcase my skills in **web design**,**front-end development**, and **digital product architecture**. The entire site was **designed from scratch in Figma** and **developed using Next.js 15 with the App Router and TailwindCSS v4**.
 
-### Architecture
-- Languages: HTML, CSS, TypeScript.
-- Frameworks: Node.js (React), TailwindCSS (CSS).
-- JS DOM: Node.js as JavaScript runtime environment.
-- CMS: Sanity.
-- Front-End Deployment: Vercel.
-- Back-End Deployment: Sanity.
+The backend is powered by **Sanity**, a headless CMS that allows for dynamic content rendering and live editing.  
+The site is **deployed on Vercel (frontend)** and **Sanity (backend)** — with no Dockerfile needed.
+
+---
+
+### Tech Stack
+- **Languages:** HTML, CSS, TypeScript  
+- **Frameworks:** React (via Next.js 15), TailwindCSS v4  
+- **Runtime:** Node.js  
+- **CMS:** Sanity.io  
+- **Hosting:** Vercel (frontend), Sanity Studio (backend)
+
+---
 
 ### Design
-The main design theme to explore on this project was Depth of Field and 2D/3D styled sheets. For that the pages included sections with variable depth (z-index), overlapping lines and boxes, and overlapped gradients (glassmorphism). The design choice was one of "brutalist" nature, exposing the underlaying grid of the website and the original wireframes, with simple straight lines and a structured approach, but breaking that with animations and movement of the lines. This aligns deeply with the modernist and minimalist artistic trends of the early-to-mid 20th century that inspire me, such as the german *Bauhaus* or the dutch *De Stijl* movements.
+This project explores the idea of **Depth of Field** and **2D/3D layering** through:
+- Overlapping containers and **z-index manipulation**
+- Experimental use of **glassmorphism**, gradients, and **gridded visual structures**
+- Brutalist/minimalist aesthetic influenced by **Bauhaus** and **De Stijl** principles
 
-Some design choices include the use of only a dark theme --there is no light mode available-- and using a light background at times. Also, there are mostly no pictures, specially in the landing page. All of those are intentional design and technical decisions.
+Key design decisions:
+- **Dark mode only** — with intentional light/dark section contrast
+- **No images** on the landing page — focusing on typography and structure
+- Layouts designed in Figma, and then translated into **pixel-perfect TailwindCSS code**
 
-From a technical and documenting standpoint, the mockups and wireframes were previously done in Figma. Later they were styled in CSS using the framekwork TailwindCSS for ease of use, maintainability, and project consistency; as well as, obviously, HTML as markup text of choice.
+---
 
 ### Front-End Structure
-The site uses app routing and the latest version of Next.js, as well as TailwindCSS for consistent styling. Thus this project uses TypeScript and the DOM heavily to create an interactive experience for the user and dynamically modify and edit the page in real time, also client side. The repository structure is fairly complex for those unfamiliar, but it follows the typical modern Next.js approach, which is extremely modular and allows for easier debugging and reuse of modules. A more detailed look of the routing and structure can be found inside the 'nextjs/' folder README.txt file. 
+- Built using the **Next.js 15 App Router**
+- Uses **TypeScript** for typed component safety
+- Fully modular file structure (`/components`, `/app`, etc.)
+- **Client-side interactivity** using modern DOM patterns
+- **Accessible and SEO-friendly structure** with custom metadata
+
+See the `frontend/README.md` for a detailed breakdown of the route structure and component logic.
+
+---
 
 ### Back-End Structure
+The backend is handled by **Sanity** using structured content models for:
+- Projects
+- Testimonials
+- Contact information
+- Future blog posts (via Portable Text)
+
+Queries are written in GROQ and resolved client-side during page rendering.
+
+See `sanity/README.md` for schema details and content structure.
+
+---
 
 ### Deployment
+- **Frontend:** Deployed with Vercel (CI/CD configured on push to `main`)  
+- **Backend (Sanity Studio):** Deployed via Sanity CLI  
+- **No Dockerfile required** due to serverless deployment stack  
+- Lighthouse score: **100/100** across all categories
+
+---
+
+### Repository Overview
+
+```bash
+├── frontend/        # Next.js + TailwindCSS app
+├── sanity/          # Sanity schemas and studio config
+└── README.md        # (This file)
