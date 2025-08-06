@@ -1,7 +1,6 @@
-Front End
----------------------------------------------------------------------
-Folder Structure
----------------------------------------------------------------------
+# Front End
+---
+## Folder Structure
 
 ./ (Project Root)
 - Contains core configuration and environment files:
@@ -36,34 +35,28 @@ Folder Structure
 - Route segments:
   - Includes secondary pages like the About or Projects page
 
----------------------------------------------------------------------
-Getting Started
----------------------------------------------------------------------
+---
 
-1. Installation
-
+## Getting Started
+### Installation
 Install dependencies:
-    npm install
+```npm install```
 
 Start the development server:
-    npm run dev
+```npm run dev```
 
-Visit in your browser:
-    http://localhost:3000
+Visit in your browser: http://localhost:3000
 
----------------------------------------------------------------------
-Sanity CMS Integration
----------------------------------------------------------------------
+### Sanity CMS Integration
 
 1. Install Required Packages:
-    npm install --legacy-peer-deps next-sanity @sanity/image-url
+```npm install --legacy-peer-deps next-sanity @sanity/image-url```
 
 2. Set Up Environment Variables:
 
 Create a file `.env.local` in the root directory with the following content:
-
+```
     NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_ID
     NEXT_PUBLIC_SANITY_DATASET=production
-
-You can find your project ID in:
-    ./sanity/sanity.config.ts
+```
+You can find your project ID in: ./sanity/sanity.config.ts
