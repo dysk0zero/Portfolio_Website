@@ -1,4 +1,4 @@
-#  Portfolio Website v0.3.3
+#  Portfolio Website v0.3.4
 ## A personal portfolio built with Next.js, TailwindCSS, and Sanity.
 
 ---

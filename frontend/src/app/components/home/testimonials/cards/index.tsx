@@ -10,7 +10,7 @@ export default function TestimonialCard({ name, role, quote }: TestimonialCardPr
       className="h-full flex flex-col justify-between p-5"
     >
       <div className="relative flex flex-col justify-start items-start gap-2 font-medium">
-        <p className="text-3xl">{quote}</p>
+        <p className="text-3xl">&quot;{quote}&quot;</p>
         <p className="text-md">{name}, {role}</p>
       </div>
       <div className="relative flex justify-between items-center">
