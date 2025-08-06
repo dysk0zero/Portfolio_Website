@@ -46,10 +46,8 @@ Run
 Then create a '.env.local' file in the '.' directory with the following code:
 
 ```
-{
-    NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_ID
-    NEXT_PUBLIC_SANITY_DATASET=production
-}
+NEXT_PUBLIC_SANITY_PROJECT_ID=YOUR_ID
+NEXT_PUBLIC_SANITY_DATASET=production
 ```
 
 You can find your ID in '/sanity/sanity.config.ts'.
