@@ -71,3 +71,8 @@ See `sanity/README.md` for schema details and content structure.
 ├── frontend/        # Next.js + TailwindCSS app
 ├── sanity/          # Sanity schemas and studio config
 └── README.md        # (This file)
+```
+
+---
+
+For personal/educational use only. See LICENSE.md for details.
