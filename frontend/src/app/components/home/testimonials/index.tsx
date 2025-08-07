@@ -17,8 +17,6 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full py-16">
-      <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
-
       <Carousel visibleCount={2}>
         {testimonials.map((t) => (
           <div key={t._id} className="min-w-[50%] px-4">
