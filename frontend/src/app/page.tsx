@@ -4,6 +4,7 @@ import Statement01 from "./components/home/statement01";
 import Statement02 from "./components/home/statement02";
 import SoftSkills from "./components/home/soft-skills";
 import Statement03 from "./components/home/statement03";
+import TestimonialsSection from "./components/home/testimonials";
 
 export default function Home() {
   return (
@@ -47,6 +48,12 @@ export default function Home() {
         <section className="relative w-full bg-background">
           <div className="max-w-[1440px] mx-auto lg:pl-[120px] lg:pr-[120px]">
             <Statement03/>
+          </div>
+        </section>
+
+        <section className="relative w-full">
+          <div className="max-w-[1440px] mx-auto lg:pl-[120px] lg:pr-[120px]">
+            <TestimonialsSection/>
           </div>
         </section>
       </main>
