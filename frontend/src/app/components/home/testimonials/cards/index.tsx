@@ -7,7 +7,7 @@ interface TestimonialCardProps {
 export default function TestimonialCard({ name, role, quote }: TestimonialCardProps) {
   return (
     <div 
-      className="h-full flex flex-col justify-between p-5"
+      className="h-full flex flex-col justify-between p-8"
     >
       <div className="relative flex flex-col justify-start items-start gap-2 font-medium">
         <p className="text-3xl">&quot;{quote}&quot;</p>

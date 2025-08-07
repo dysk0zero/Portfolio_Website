@@ -1,21 +1,31 @@
-import TestimonialCard from "./cards"
+'use client'
 
-interface TestimonialsCarouselProps {
-  testimonials: Array<{
-    name: string
-    role: string
-    quote: string
-  }>
-}
+import { useEffect, useState } from "react";
+import Carousel from "../../ui/carousel";
+import { getTestimonials } from "@/lib/sanity/getTestimonials";
+import TestimonialCard from "./cards";
+import { Testimonial } from "@/lib/sanity/getTestimonials";
 
-export default function TestimonialsCarousel({ testimonials }: TestimonialsCarouselProps) {
+export default function TestimonialsSection() {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([])
+
+  useEffect(() => {
+    getTestimonials().then(setTestimonials)
+  }, [])
+
+  if (!testimonials.length) return null
+
   return (
-    <div className="flex gap-6 py-4 overflow-x-auto snap-x snap-mandatory">
-      {testimonials.map((t, i) => (
-        <div key={i} className="flex-shrink-0 snap-center">
-          <TestimonialCard {...t} />
-        </div>
-      ))}
-    </div>
+    <section className="w-full py-16">
+      <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
+
+      <Carousel visibleCount={2}>
+        {testimonials.map((t) => (
+          <div key={t._id} className="min-w-[50%] px-4">
+            <TestimonialCard name={t.name} role={t.role} quote={t.quote} />
+          </div>
+        ))}
+      </Carousel>
+    </section>
   )
 }
